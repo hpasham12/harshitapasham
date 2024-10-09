@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(34, 13, 75);
+  color: white;
+}
+
+.contact-button {
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  background: linear-gradient(90deg, #a993f0 0%, #7e61e7 100%);
+  padding: 0.6rem 2rem;
+  border: none;
+  outline: 1.5px solid transparent;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3 ease;
+}
+
+.contact-button:hover {
+  color: #a993f0;
+  background: #000;
+  outline: 1.5px solid #a993f0;
+}
+
+@layer components {
+  .menu-item {
+    @apply relative text-[0.9rem] font-medium text-[#ffff] cursor-pointer
+           before:content-[''] before:absolute before:w-[2rem] before:h-[0.2rem] 
+           before:bg-gradient-to-r before:from-[#a993f0] before:to-[#7e61e7] 
+           before:rounded-[0.5rem] before:bottom-[-0.6rem] before:opacity-0 
+           before:translate-x-[-1.5rem] before:transition-all before:duration-300 before:ease-in-out
+           hover:before:w-full hover:before:translate-x-0 hover:before:opacity-100;
+  }
+}
