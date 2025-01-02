@@ -10,8 +10,8 @@ const ExperienceCard = ({item}) => {
                 {item.date}
             </div>
             <div className="Card-details text-sm">
-                {item.responsibilities.map((line) => (
-                    <li className="ml-4 mb-2">{line}</li>
+                {item.responsibilities.map((line, idx) => (
+                    <li key={idx} className="ml-4 mb-2">{line}</li>
                 ))}
             </div>
         </div>

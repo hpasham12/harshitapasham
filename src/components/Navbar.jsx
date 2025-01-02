@@ -19,9 +19,11 @@ const Navbar = () => {
                         <li className="mx-6">
                             <a className="menu-item" href="#Contact">Contact Me</a>
                         </li>
-                        <button className="contact-button bg-white text-black px-4 rounded-sm" onClick={() => {}}>
-                            Hire Me
-                        </button>
+                        <a href="mailto:hpasham12@gmail.com">
+                            <button className="contact-button bg-white text-black px-4 rounded-sm" onClick={() => {}}>
+                                Hire Me
+                            </button>
+                        </a>
                     </ul>
                 </div>
             </nav>
