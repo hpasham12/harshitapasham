@@ -7,7 +7,7 @@ const Experience = () => {
     const sliderRef = useRef();
 
     const settings = {
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 2,
@@ -26,9 +26,9 @@ const Experience = () => {
 
     return (
         <>
-            <section id="Experience" className="Experience mx-6 my-8">
+            <section id="Experience" className="Experience mx-6 my-10">
                 <h5 className="mb-4 ml-4 text-xl font-extrabold">Work Experience</h5>
-                <div className="Experience-content">
+                <div className="Experience-content mb-4">
                     <Slider ref={sliderRef} {...settings}>
                         {WORK_EXPERIENCE.map((item) => (
                             <ExperienceCard key={item.title} item={item} />

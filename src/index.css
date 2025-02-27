@@ -29,6 +29,28 @@ body {
   outline: 1.5px solid #a993f0;
 }
 
+.slick-dots li.slick-active {
+  background-color: #ffffff;
+}
+
+.slick-dots li {
+  background-color: #a993f0;
+  width: 10px !important;
+  height: 10px !important;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.slick-dots li button:before {
+  color: transparent !important;
+}
+
+.slick-dots {
+  margin: 8px !important;
+  bottom: -42px !important;
+}
+
 @layer components {
   .menu-item {
     @apply relative text-[0.9rem] font-medium text-[#ffff] cursor-pointer
