@@ -1,6 +1,16 @@
 export const WORK_EXPERIENCE = [
     {
         title: "Software Engineer",
+        company: "Imagine, Believe, Realize LLC",
+        date: "October 2024 - Present",
+        responsibilities: [
+            "Currently building the Geographic Update Partnership Software (GUPS) web application for the US Census Bureau, implementing complex geospatial features in Angular, Django, Python, and PostgreSQL.",
+            "Implemented 5 major user stories and resolved 15+ critical bugs within two-week sprint periods to improve application reliability.",
+            "Actively participate in Agile practices including sprint planning, daily stand-ups, and retrospectives, contributing to continuous improvement of development processes.",
+        ],
+    },
+    {
+        title: "Software Engineer",
         company: "Yext",
         date: "May 2023 - June 2024",
         responsibilities: [
